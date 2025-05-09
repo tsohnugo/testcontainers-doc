@@ -1,6 +1,6 @@
 [English Version](README.md)
 
-# 使用Testcontainers进行Flink集成GaussDB 测试。。
+# 使用Testcontainers进行Flink集成GaussDB 测试
 ## 引言
 Testcontainers是一个非常实用的工具，它可以帮助我们在测试环境中轻松地创建和管理各种容器化的服务。目前，Flink支持的数据库连接器有很多，例如 MySQL的连接器(flink-connector-jdbc-mysql)、PostgreSQL的连接器(flink-connector-jdbc-postgre)等，PostgreSQL、Oracle、MySQL等主流数据库厂商已经实现在Testcontainers测试框架内的测试，但GaussDB还未实现；我们在向Flink提供支持GaussDB的数据库连接器(flink-connector-jdbc-gaussdb)时需要按照社区规范使用Testcontainers测试框架同步实现对GaussDB的测试，这样一来GaussDB的数据库连接器(flink-connector-jdbc-gaussdb)才能顺利合入到开源社区。
 ## 一、Testcontainers简介
